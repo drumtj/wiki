@@ -1,0 +1,50 @@
+{
+  "name": "@drumtj/wiki",
+  "version": "1.0.0",
+  "description": "easy wiki",
+  "main": "./dist/wiki.umd.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack -p",
+    "release": "npm run build && npm run deploy && np --no-cleanup --yolo --no-release-draft",
+    "deploy": "git add -A && git commit -m 'deploy' && git push origin master"
+  },
+  "author": {
+    "name": "tj",
+    "email": "drumtj@gmail.com"
+  },
+  "keywords": [
+    "wiki",
+    "wikipedia"
+  ],
+  "homepage": "https://github.com/drumtj/wiki",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drumtj/wiki"
+  },
+  "bugs": {
+    "url": "https://github.com/drumtj/wiki/issues",
+    "email": "drumtj@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-transform-arrow-functions": "^7.8.3",
+    "@babel/plugin-transform-async-to-generator": "^7.5.0",
+    "@babel/plugin-transform-classes": "^7.5.5",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.7.6",
+    "@types/node": "^12.6.8",
+    "babel-loader": "^8.0.6",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-sources": "^1.3.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
