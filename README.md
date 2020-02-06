@@ -22,7 +22,7 @@ $ npm install @drumtj/wiki
 
 Using cdn:
 ```html
-<script src="https://unpkg.com/@drumtj/wiki@1.0.1/dist/wiki.js"></script>
+<script src="https://unpkg.com/@drumtj/wiki@1.0.2/dist/wiki.js"></script>
 ```
 
 Using ES2015
