@@ -22,7 +22,7 @@ $ npm install @drumtj/wiki
 
 Using cdn:
 ```html
-<script src="https://unpkg.com/@drumtj/wiki@1.0.2/dist/wiki.js"></script>
+<script src="https://unpkg.com/@drumtj/wiki@1.0.3/dist/wiki.js"></script>
 ```
 
 Using ES2015
@@ -53,6 +53,7 @@ wiki.links("orange", {offset:0, limit:10, thumbsize:80}).then(info=>console.log(
 // result data
 {
   "nextOffset": 10,
+  "redirects":[{index: 2, from: "old title", to: "current title"}],
   "pages": [{
     "pageid": 4984440,
     "ns": 0,
