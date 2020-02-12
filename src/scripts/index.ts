@@ -1,7 +1,5 @@
 import axios from "axios";
-// import $ from "jquery";
 
-// window['$'] = $;
 
 const endpoint = {
   html: "https://{lang}.wikipedia.org/api/rest_v1/page/html/",

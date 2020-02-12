@@ -22,7 +22,7 @@ $ npm install @drumtj/wiki
 
 Using cdn:
 ```html
-<script src="https://unpkg.com/@drumtj/wiki@1.0.3/dist/wiki.js"></script>
+<script src="https://unpkg.com/@drumtj/wiki@1.0.4/dist/wiki.js"></script>
 ```
 
 Using ES2015
@@ -41,7 +41,7 @@ wiki.getBaseLink(); // "https://en.wikipedia.org/wiki"
 wiki.sections("orange").then(sections=>console.log(sections));
 
 // Return wiki search results in html (return Promise)
-wiki.html("orange").then(htmls=>console.log(html));
+wiki.html("orange").then(html=>console.log(html));
 
 // Set base link address of every 'a' tag in wiki search results
 wiki.setBaseLink("http://myserver"); //<a href="http://myserver/orange">...</a>
