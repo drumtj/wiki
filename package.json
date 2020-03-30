@@ -1,6 +1,6 @@
 {
   "name": "@drumtj/wiki",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "easy wiki",
   "main": "./dist/wiki.js",
   "scripts": {
