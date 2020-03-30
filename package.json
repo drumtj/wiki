@@ -2,7 +2,7 @@
   "name": "@drumtj/wiki",
   "version": "1.0.4",
   "description": "easy wiki",
-  "main": "./dist/wiki.umd.js",
+  "main": "./dist/wiki.js",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack -p",

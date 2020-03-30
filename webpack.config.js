@@ -129,26 +129,26 @@ const config = {
 let libraryName = "wiki";
 let pfh = `(function webpackUniversalModuleDefinition(root, factory) {
   if(typeof exports === 'object' && typeof module === 'object')
-    module.exports = factory();
+    module.exports = factory().default;
   else if(typeof define === 'function' && define.amd)
     define([], factory);
   else if(typeof exports === 'object')
-    exports['MyLibrary'] = factory();
+    exports['MyLibrary'] = factory().default;
   else{
-    root['MyLibrary'] = factory();//.default;
+    root['MyLibrary'] = factory().default;
   }
 })(typeof self !== 'undefined' ? self : this, function() {
   return `.replace(/MyLibrary/g, libraryName);
 let pff = `\n})`
 
-let umdCfg = Object.assign({}, config);
-umdCfg.output = {
-  path: path.join(__dirname, "dist"),
-  library: libraryName,
-  libraryTarget: "umd",
-	// globalObject: 'this',
-  filename: "./wiki.umd.js"
-}
+// let umdCfg = Object.assign({}, config);
+// umdCfg.output = {
+//   path: path.join(__dirname, "dist"),
+//   library: libraryName,
+//   libraryTarget: "umd",
+// 	// globalObject: 'this',
+//   filename: "./wiki.umd.js"
+// }
 
 
 let globalCfg = Object.assign({}, config);
@@ -166,4 +166,5 @@ globalCfg.plugins = [
   }),
 ]
 
-module.exports = [ umdCfg, globalCfg ];
+// module.exports = [ umdCfg, globalCfg ];
+module.exports = [ globalCfg ];
