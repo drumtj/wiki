@@ -22,12 +22,16 @@ $ npm install @drumtj/wiki
 
 Using cdn:
 ```html
-<script src="https://unpkg.com/@drumtj/wiki@1.0.6/dist/wiki.js"></script>
+<script src="https://unpkg.com/@drumtj/wiki@1.0.7/dist/wiki.js"></script>
 ```
 
-Using ES2015
+Using
 ```js
 import * as wiki from '@drumtj/wiki';
+```
+
+```js
+const wiki = require('@drumtj/wiki');
 ```
 
 ## How To
